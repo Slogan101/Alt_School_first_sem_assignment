@@ -1,0 +1,258 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #3498db;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 40px;
+}
+
+/* Slogan Page: About Me Section */
+#intro {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+#about_me {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#about_me h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+#about_me ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.photo_ {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.my_image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.photo_text {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Biography Section */
+#biography {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#biography h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+#biography h3 {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+#biography p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Form section styling */
+#signup-form-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+#form-header h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+#form-header p {
+    margin-bottom: 20px;
+    color: #7f8c8d;
+}
+
+/* Form styling */
+#signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.forms,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.forms:focus,
+select:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Button styling */
+#submit-button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#submit-button:hover {
+    background-color: #2980b9;
+}
+
+/* Terms styling */
+#terms {
+    margin-bottom: 20px;
+}
+
+#terms p {
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+#terms a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+#terms a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    #intro p {
+        font-size: 16px;
+    }
+
+    #about_me h1 {
+        font-size: 24px;
+    }
+
+    #signup-form-section {
+        padding: 15px;
+    }
+
+    .forms,
+    select {
+        font-size: 14px;
+    }
+
+    #submit-button {
+        font-size: 14px;
+    }
+
+    #biography h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar a {
+        font-size: 14px;
+    }
+
+    #intro p {
+        font-size: 14px;
+    }
+
+    #about_me h1 {
+        font-size: 22px;
+    }
+
+    .forms,
+    select {
+        font-size: 12px;
+    }
+
+    #submit-button {
+        font-size: 12px;
+    }
+}

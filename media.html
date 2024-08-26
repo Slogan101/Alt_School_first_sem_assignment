@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html#about_me">About Me</a></li>
+            <li><a href="./index.html#biography">Biography</a></li>
+            <li><a href="./form.html">Join Alt_School</a></li>
+        </ul>
+    </nav>
+    <h1>TASK B SOLUTION</h1>
+    <hr>
+    <p>In this Page, I will be making use of all the media elements in the HTML and making sure that they're responsive
+        to different screen models.</p>
+
+    <p>1. <b>Audio Element: &lt;audio src=""&gt;&lt;/audio&gt; </b>It allows us to add audio content such as music or
+        sound files.</p>
+        <audio controls src="./assets/audio/Sarkodie.mp3"></audio>
+    <p>2. <b>Video: &lt;video src=""&gt;&lt;/video&gt; </b>This is used to add video content to the webpage. It can
+        include multiple source elements to support different video.</p>
+    <video controls src="/Assignment_1/assets/video/"></video>
+    <p>3. <b>Image Element: &lt;img&gt;</b> The Image elemet is used to add images to the webpage and it is a self
+        closing tag.</p>
+    <img src="./assets/images/hello_sir.jpg" alt="Picture of Newson." width="250px" height="250px">
+    <p>4. <b>Picture Element: &lt;picture&gt;&lt;/picture&gt;</b> The picture elemet is used to define multiple sources
+        of an image. This allows the browser to choose the most appropriate image based on the device or screen
+        especially when you're trying to achieve a responsive web design. You can test this out by shrinking your web browser.</p>
+        <picture>
+            <source media="(min-width: 375px) and (max-width: 767px)" srcset="./assets/images/mobile.jpg">
+            <source media="(min-width: 768px) and (max-width: 1023px)" srcset="./assets/images/tablet.jpg">
+            <img src="./assets/images/desktop.jpg" alt="People wearing face-mask" width="250px" height="250px">
+        </picture>
+        <br>
+        <br>
+        
+        
+
+    <button>
+        <a href="./table.html">Go Back</a>
+    </button>
+
+
+
+
+</body>
+
+</html>
